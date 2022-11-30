@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TestTask</string>
+    <string name="companies">Компании</string>
+    <string name="website">Сайт:</string>
+    <string name="phone">Телефон:</string>
+    <string name="default_text">-</string>
+    <string name="image_of_company">Image of company</string>
+</resources>

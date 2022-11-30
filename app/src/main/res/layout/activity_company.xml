@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/background_light"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.company.CompanyActivity">
+
+        <ImageView
+            android:id="@+id/companyItemIconImageView"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/image_of_company"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/companyItemNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@drawable/company_item_background"
+            app:layout_constraintEnd_toEndOf="@id/companyItemIconImageView"
+            app:layout_constraintBottom_toBottomOf="@id/companyItemIconImageView"/>
+
+        <TextView
+            android:id="@+id/companyItemDescriptionTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="@string/default_text"
+            app:layout_constraintTop_toBottomOf="@+id/companyItemIconImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/companyItemWebsiteTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="4dp"
+            android:text="@string/website"
+            app:layout_constraintTop_toTopOf="@+id/companyItemWebsiteTextView"
+            app:layout_constraintEnd_toStartOf="@+id/companyItemWebsiteTextView"/>
+
+        <TextView
+            android:id="@+id/companyItemWebsiteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="@string/default_text"
+            android:autoLink="web"
+            app:layout_constraintTop_toBottomOf="@+id/companyItemDescriptionTextView"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/companyItemPhoneTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:paddingBottom="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="@string/phone"
+            app:layout_constraintTop_toTopOf="@+id/companyItemPhoneTextView"
+            app:layout_constraintEnd_toStartOf="@+id/companyItemPhoneTextView"/>
+
+        <TextView
+            android:id="@+id/companyItemPhoneTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="@string/default_text"
+            android:autoLink="phone"
+            app:layout_constraintTop_toBottomOf="@+id/companyItemWebsiteTextView"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ProgressBar
+            android:id="@+id/companyLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
